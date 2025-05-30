@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ração Golden Cat Carne - Pet Center</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <header> 
+    <a href="index.html">
+      <img src="img/logo_tcc-removebg-preview (3).png" alt="Logo" class="logo">
+    </a>
+    <nav>
+      <a href="index.html"><button>Início</button></a>
+      <a href="bestsales.html"><button>Mais Vendidos</button></a>
+      <a href="offers.html"><button>Promoções</button></a>
+      <a href="contact.html"><button>Contato</button></a> 
+    </nav>
+    <div class="cart">
+      <button id="cartButton" onclick="verCarrinho()">
+        <a href="cart.html"> <img src="img/cart.png" alt="Carrinho"></a>
+        <span id="cartCount">0</span>
+      </button>
+    </div>
+  </header>
+
+  <main class="mainprodutos">
+    <section class="produto1">
+      <img class="produtosc" src="img/ração_gato_3.png" alt="Ração Golden Cat Castrado">
+       <div class="preços">
+        <h3> Ração Golden Cat Castrado Carne 10,1Kg</h3>
+        <h3>R$ 179,99</h3>
+        <div class="Comprar">
+             <button class="Buy" onclick="addToCart('Ração Golden Cat Castrado 10,1Kg', 199.99)">Adicionar ao Carrinho</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p class="footer">&copy; 2024 Bueno's Coorp</p>p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pet Center</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <header> 
+    <a href="index.html">
+      <img src="img/logo_tcc-removebg-preview (3).png" alt="Logo" class="logo">
+    </a>
+    <nav>
+      <a href="index.html"><button>Início</button></a>
+      <a href="bestsales.html"><button>Mais Vendidos</button></a>
+      <a href="offers.html"><button>Promoções</button></a>
+      <a href="contact.html"><button>Contato</button></a> 
+    </nav>
+    <div class="cart">
+      <button id="cartButton" onclick="verCarrinho()">
+        <a href="cart.html"> <img src="img/cart.png" alt="Carrinho"></a>
+        <span id="cartCount">0</span>
+      </button>
+    </div>
+  </header>
+  <main class="mainprodutos">
+    <h2 class="ticompras">Carrinho de Compras</h2>
+    <div id="carrinhoConteudo">
+      <p class="pcompras"></p>
+    </div>
+    <button class="finalizarcompra" onclick="finalizarCompra()">Finalizar Compra</button>
+
+
+    <div class="desenvolvimento">
+    <img src="img/desenvolve-removebg-preview.png" alt="Site em desenvolvimento" width="800px">
+    </div>
+
+  </main>
+
+
+
+  <footer>
+    <p>&copy; 2024 Pet Center Bueno</p>
+  </footer>
+
+  <script>
+    function exibirCarrinho() {
+      let carrinho = JSON.parse(localStorage.getItem("carrinho")) || [];
+      let carrinhoConteudo = document.getElementById("carrinhoConteudo");
+
+      if (carrinho.length === 0) {
+        carrinhoConteudo.innerHTML = "<p>Seu carrinho está vazio.</p>";
+      } else {
+        carrinhoConteudo.innerHTML = "<ul>" + carrinho.map(function(item) {
+          return "<li>" + item.nome + " - R$ " + item.preco.toFixed(2) + "</li>";
+        }).join("") + "</ul>";
+      }
+    }
+
+
+    function finalizarCompra() {
+      alert("Compra finalizada!");
+      localStorage.removeItem("carrinho"); 
+    }
+
+    window.onload = exibirCarrinho;
+  </script>
+  <footer>
+  <p class="footer">&copy; 2024 Bueno's Coorp</p>
+  </footer>
+</body>
+
+</html>

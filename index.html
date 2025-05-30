@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>  Pet Center</title>
+  <link href="style.css" rel="stylesheet" type="text/css">
+</head>
+
+
+  <body>
+   <header> 
+    <a href="index.html">
+      <img src="img/logo_tcc-removebg-preview (3).png" alt="Logo" class="logo">
+    </a>
+    <nav>
+      <a href="index.html"><button>Início</button></a>
+      <a href="bestsales.html"><button>Mais Vendidos</button></a>
+      <a href="offers.html"><button>Promoções</button></a>
+      <a href="contact.html"><button>Contato</button></a>
+    </nav>
+     <div class="cart">
+       <button id="cartButton" onclick="verCarrinho()">
+         <a href="cart.html"> <img src="img/cart.png" alt="Carrinho"></a>
+         <span id="cartCount">0</span>
+       </button>
+     </div>
+     </div>
+  </header>
+
+
+
+  <main>
+    <div class="main-container-dogs">
+      <div class="main-dogs">
+        <section class="product" onclick="adicionarAoCarrinho('Ração Golden SP', 50)">
+          <a href="goldensp.html"><img src="img/ração_4-removebg-preview.png" alt="Ração Golden SP"></a>
+        </section>
+        <section class="product" onclick="adicionarAoCarrinho('Ração Golden PT', 45)">
+          <a href="goldenpt.html"><img src="img/ração_2-removebg-preview.png" alt="Ração Golden PT"></a>
+        </section>
+        <section class="product" onclick="adicionarAoCarrinho('Ração Premier Re', 60)">
+          <a href="premierre.html"><img src="img/ração_3-removebg-preview.png" alt="Ração Premier Re"></a>
+        </section>
+        <section class="product" onclick="adicionarAoCarrinho('Ração Premier F', 55)">
+          <a href="premierf.html"><img src="img/ração_5-removebg-preview.png"  alt="Ração Premier F"></a>
+        </section>
+      </div>
+    </div>
+
+    <section class="section-tudo-cachorros">
+      <h2 class="section-title">Tudo para cães</h2>
+      <div class="section-content">
+        <div class="item">
+          <img src="img/racao-selections-removebg-preview.png" alt="Ração">
+          <p class="tudo">Ração</p>
+        </div>
+        <div class="item">
+          <img src="img/petisco-e-osso-removebg-preview.png" alt="Petisco e Osso">
+          <p class="tudo">Petisco e Osso</p>
+        </div>
+        <div class="item">
+          <img src="img/higiene-removebg-preview.png" alt="Higiene">
+          <p class="tudo">Higiene</p>
+        </div>
+        <div class="item">
+          <img src="img/farmacia-bravecto-removebg-preview.png" alt="Farmácia">
+          <p class="tudo">Farmácia</p>
+        </div>
+        <div class="item">
+          <img src="img/brinquedos-cachorro-removebg-preview.png" alt="Brinquedos">
+          <p class="tudo">Brinquedos</p>
+        </div>
+        <div class="item">
+          <img src="img/coleiras-guia-e-peitoral-removebg-preview.png" alt="Coleiras, Guia e Peitoral">
+          <p class="tudo">Coleiras, Guia e Peitoral</p>
+        </div>
+      </div>
+    </section>
+
+    <div class="main-container-cats">
+      <div class="main-cats">
+        <section class="product" onclick="adicionarAoCarrinho('Ração Golden Cat', 40)">
+          <a href="cat1.html"><img class="ofertas" src="img/ração_gato_1.png" alt="Ração Golden Cat"></a>
+        </section>
+        <section class="product" onclick="adicionarAoCarrinho('Ração Whiskas Cat', 35)">
+          <a href="cat2.html"><img class="ofertas" src="img/ração_gato_2.png" alt="Ração Whiskas Cat"></a>
+        </section>
+        <section class="product" onclick="adicionarAoCarrinho('Ração Pedigree Cat', 30)">
+          <a href="cat3.html"><img class="ofertas" src="img/ração_gato_3.png" height="400" width="250" alt="Ração Pedigree Cat"></a>
+        </section>
+        <section class="product" onclick="adicionarAoCarrinho('Ração Pedigree Cat', 30)">
+          <a href="cat4.html"><img class="ofertas" src="img/ração_gato_4.png" alt="Ração Pedigree Cat"></a>
+        </section>
+      </div>
+    </div>
+    <section class="section-tudo-cachorros">
+      <h2 class="section-title">Tudo para Gatos</h2>
+      <div class="section-content">
+        <div class="item">
+          <img src="img/racao-selections-removebg-preview.png" alt="Ração">
+          <p class="tudo">Ração</p>
+        </div>
+        <div class="item">
+          <img src="img/petisco-e-osso-removebg-preview.png" alt="Petisco e Osso">
+          <p class="tudo">Petisco e Osso</p>
+        </div>
+        <div class="item">
+          <img src="img/higiene-removebg-preview.png" alt="Higiene">
+          <p class="tudo">Higiene</p>
+        </div>
+        <div class="item">
+          <img src="img/farmacia-bravecto-removebg-preview.png" alt="Farmácia">
+          <p class="tudo">Farmácia</p>
+        </div>
+        <div class="item">
+          <img src="img/brinquedos-cachorro-removebg-preview.png" alt="Brinquedos">
+          <p class="tudo">Brinquedos</p>
+        </div>
+        <div class="item">
+          <img src="img/coleiras-guia-e-peitoral-removebg-preview.png" alt="Coleiras, Guia e Peitoral">
+          <p class="tudo">Coleiras, Guia e Peitoral</p>
+        </div>
+
+        <div class="desenvolvimento">
+        <img src="img/desenvolve-removebg-preview.png" alt="Site em desenvolvimento" width="400px">
+        </div>
+
+      </div>
+    </section>
+
+
+  </main>
+
+  <footer>
+    <p class="footer">&copy; 2024 Bueno's Coorp</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
